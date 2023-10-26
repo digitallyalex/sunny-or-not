@@ -174,7 +174,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -211,7 +211,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -248,7 +248,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -285,7 +285,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -322,7 +322,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -359,7 +359,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -396,7 +396,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -433,7 +433,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr><tr class="hour-row">
@@ -470,7 +470,7 @@
           </td>
 
           <td><div class="info-group">
-            <div class="label">FL Temp</div>
+            <div class="label">Precip</div>
             <div>0<span class="value-sub-info">in</span></div>
           </div></td>
         </tr>
@@ -478,7 +478,55 @@
     </table>
 
     
-    <template></template>
+    <template id="day-card-template">
+      <div class="day-card">
+        <img data-icon class="weather-icon"/>
+        <div class="day-card-day" data-date></div>
+        <div><span data-temp></span><span>&deg;</span></div>
+      </div>
+    </template>
+
+    
+    <template id="hour-row-template">
+      <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div class="label" data-day></div>
+            <div data-time></div>
+          </div>
+        </td>
+  
+        <td>
+          <img data-icon class="weather-icon">
+        </td>
+  
+        <td>
+          <div class="info-group">
+          <div class="label">Temp</div>
+          <div><span data-temp></span><span>&deg;</span></div>
+        </div>
+      </td>
+  
+        <td>
+          <div class="info-group">
+            <div class="label">FL Temp</div>
+            <div><span data-fl-temp></span><span>&deg;</span></div>
+          </div>
+        </td>
+  
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span data-wind></span><span class="value-sub-info">mph</span></div>
+          </div>
+        </td>
+  
+        <td><div class="info-group">
+          <div class="label">Precip</div>
+          <div><span data-precip></span><span class="value-sub-info">in</span></div>
+        </div></td>
+      </tr>
+    </template>
 
     <script type="module" src="/main.js"></script>
   </body>
