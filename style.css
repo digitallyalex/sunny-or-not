@@ -12,10 +12,10 @@ body {
 }
 
 /* make visible after finishing the rest of project */
-.blurred {
+/* .blurred {
   filter: blur(3px);
   overflow: hidden;
-}
+} */
 
 /* header section starts here */
 .header {
